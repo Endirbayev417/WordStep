@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordStep — английские слова на Android</title>
+  <meta name="description" content="WordStep: учите английские слова по юнитам, проходите тесты и следите за прогрессом. Бесплатно, без регистрации.">
+  <link rel="icon" href="icon-512.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <a class="brand" href="#top" id="top">
+      <svg viewBox="0 0 1024 1024" width="36" height="36" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8A6BF5"/><stop offset="1" stop-color="#4A3FD0"/></linearGradient>
+        <clipPath id="c"><path d="M200 744V656A36 36 0 0 1 236 620H440V496A36 36 0 0 1 476 460H630V336A36 36 0 0 1 666 300H788A36 36 0 0 1 824 336V744A36 36 0 0 1 788 780H236A36 36 0 0 1 200 744Z"/></clipPath></defs>
+        <rect width="1024" height="1024" rx="230" fill="url(#g)"/>
+        <g clip-path="url(#c)"><rect x="200" y="300" width="240" height="480" fill="#BDB5F7"/><rect x="440" y="300" width="190" height="480" fill="#DAD5FC"/><rect x="630" y="300" width="194" height="480" fill="#fff"/></g>
+        <circle cx="727" cy="234" r="50" fill="#FF9800"/>
+      </svg>
+      <span>WordStep</span>
+    </a>
+    <button id="themeBtn" class="icon-btn" type="button" aria-label="Сменить тему">🌓</button>
+  </header>
+
+  <main>
+    <!-- Главный блок -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Учите английские слова <span class="accent">шаг за шагом</span></h1>
+        <p>Книги, юниты, карточки с транскрипцией и переводом, а в конце каждого юнита тест. Бесплатно, без регистрации и без интернета.</p>
+        <div class="actions">
+          <a class="btn primary" id="downloadBtn" href="WordStep.apk" download>⬇ Скачать APK</a>
+          <a class="btn ghost" href="#install">Как установить</a>
+        </div>
+        <p class="note">Для Android 8.0 и выше</p>
+        <p class="note">⚠ Демо-версия: приложение дорабатывается</p>
+      </div>
+
+      <div class="phone" aria-hidden="true">
+        <div class="phone-title">WordStep</div>
+        <div class="tiles">
+          <div class="tile t1">Level 1</div>
+          <div class="tile t2">Level 2</div>
+          <div class="tile t3">Level 3</div>
+          <div class="tile t4">Level 4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Возможности -->
+    <section class="features">
+      <article class="card"><h3>📚 Юниты</h3><p>Слова разбиты на небольшие юниты, чтобы учить понемногу каждый день.</p></article>
+      <article class="card"><h3>🧠 Тесты</h3><p>Слово и четыре варианта перевода. В конце вы видите результат.</p></article>
+      <article class="card"><h3>🌙 Тёмная тема</h3><p>Спокойный тёмный интерфейс, который удобно читать вечером.</p></article>
+    </section>
+
+    <!-- Установка -->
+    <section id="install" class="block">
+      <h2>Как установить</h2>
+      <ol class="steps">
+        <li>Скачайте файл APK кнопкой выше.</li>
+        <li>Откройте его на телефоне. Если Android спросит, разрешите установку из этого источника.</li>
+        <li>Нажмите «Установить» и откройте WordStep.</li>
+      </ol>
+    </section>
+
+    <!-- Вопросы -->
+    <section class="block">
+      <h2>Вопросы</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Почему телефон предупреждает об установке?<span class="plus">+</span></button>
+          <div class="faq-a" hidden>Приложение распространяется не через Google Play, поэтому Android показывает стандартное предупреждение о неизвестном источнике. Установку можно разрешить для одного приложения и потом отключить.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Как обновить приложение?<span class="plus">+</span></button>
+          <div class="faq-a" hidden>Скачайте новую версию с этой страницы и установите поверх старой. Прогресс и настройки сохранятся.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Нужен ли интернет и аккаунт?<span class="plus">+</span></button>
+          <div class="faq-a" hidden>Нет. Приложение работает без интернета и без регистрации и не собирает ваши данные.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проверка файла -->
+    <section class="block">
+      <h2>Проверка файла</h2>
+      <p>Контрольная сумма SHA-256 помогает убедиться, что файл не изменили:</p>
+      <div class="hash-row">
+        <code id="hashText">ВСТАВЬТЕ_СЮДА_SHA256</code>
+        <button id="copyBtn" class="btn small" type="button">Копировать</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="note">⚠ Демо-версия: приложение дорабатывается</p>
+    © <span id="year"></span> WordStep
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
